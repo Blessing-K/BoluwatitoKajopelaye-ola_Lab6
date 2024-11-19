@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    background-color: #889fc9;
+    padding: 10px 10px 10px 155px;
+    font-size: 160%;
+    background-image: url(../images/lighthouselogo.jpg);
+    background-repeat: no-repeat;
+}
+
+.logo_img{
+    height: auto;
+}
+
+.content{
+    display: flex;
+}
+
+nav{
+    display: flex;
+}
+
+main article{
+    font-size: 1.2em;
+}
+
+nav ul{
+    padding: 0;
+    list-style: none;
+    background-color: #869dc7;
+    margin: 0;
+}
+  
+nav ul li{
+    margin: 0;
+    padding: 20px 50px;
+    padding-left: 20px;
+    background-color: #f4a9c8;
+    border-bottom: solid white;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer{
+    text-align: center;
+    background-color: #6b8eb6;
+    padding: 10px;
+}
+
+article{
+    margin: 10px 20px;
+}
+
+aside{
+    margin: 20px;
+    float: right;
+}
+
+h2{
+    color: #98b4d3;
+}
+
+@media (min-width: 761px) and (max-width: 1024px){
+    .content{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 100px;
+        flex: 0;
+        color: white;
+        margin-top: -50px;  
+        z-index: 2;
+        background-color: #B3C7E6;
+    }
+
+    nav ul{
+        display: flex;
+        width: 100%;
+        justify-content:center;
+        background-color: #B3C7E6;
+
+    }
+
+    nav ul li{
+        display: inline;
+        margin: 10px;
+        border: none;
+        border-radius: 2px;
+        padding: 20px;
+    }
+
+    header{
+        position: relative;
+        height: 150px;
+        display: flex;
+    }
+
+}
+
+@media (max-width: 760px){
+    .content{
+        flex-direction: column;
+    }
+
+    aside img{
+        display: none;
+    }
+
+    nav ul{
+        width: 100%
+    }
+
+    nav ul li{
+        width: 100%;
+        background-color: #98b4d3;
+    }
+
+    main article{
+        font-size: 1.7em;
+    }
+    
+    header{
+        background-color: #99aed9;
+        width: 100%;
+        background-position: right;
+        background-size:50%;
+        padding-left: 3%;
+        font-family: Verdana, Arial, sans-serif;
+        font-size: 1.3em;
+        color: #00005D;
+    }
+}
