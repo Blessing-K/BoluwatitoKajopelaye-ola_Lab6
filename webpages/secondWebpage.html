@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+        table{
+            border-collapse: collapse;
+            width:100%;
+            box-sizing: border-box;
+        }
+
+        td, th{
+            border: 1px solid red;
+            text-align: center;
+            padding: 10px;
+        }
+
+        tr:nth-child(even){
+            background-color: bisque;
+        }
+
+        tr:hover{
+            background-color: aqua;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <table id="students">
+        <tr><th>Name</th><th>Address</th><th>Age</th></tr>
+        <tr><td>Blessing</td><td>Mississauga</td><td>24</td></tr>
+        <tr><td>Kiwi</td><td>Toronto</td><td>26</td></tr>
+        <tr><td>Lily</td><td>Toronto</td><td>30</td></tr>
+        <tr><td>Ayush</td><td>Toronto</td><td>18</td</tr>
+    </table>
 </body>
 </html>
